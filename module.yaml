@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=../../.json_schemas/module.json
+
+# Optional: Specify the OS if needed
+os:
+  - linux
+
+# Actions to run when the module is triggered
+run:
+  - action: file
+    target: "{{config_dir}}/kitty/config"
+    template: "kitty_config.j2"  # Template file for Kitty configuration
+
+  - action: shell
+    command: "kitty +kitten themes --reload"  # Reloads Kitty themes
