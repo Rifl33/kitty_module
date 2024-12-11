@@ -8,7 +8,7 @@ os:
 run:
   - action: file
     target: "{{config_dir}}/kitty/config"
-    template: "kitty_config.j2"  # Template file for Kitty configuration
+    template: "kitty.toml.j2"  # Template file for Kitty configuration
 
   - action: shell
     command: "kitty +kitten themes --reload"  # Reloads Kitty themes
