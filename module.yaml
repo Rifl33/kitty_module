@@ -7,8 +7,5 @@ os:
 # Actions to run when the module is triggered
 run:
   - action: file
-    target: "{{config_dir}}/kitty/config"
-    template: "kitty.toml.j2"  # Template file for Kitty configuration
+    target: "{{config_dir}}/kitty/kitty.conf"
 
-  - action: shell
-    command: "kitty +kitten themes --reload"  # Reloads Kitty themes
