@@ -1,42 +1,33 @@
-[colors.normal]
-black_d = {{term.color0}}
-red_d = {{term.color1}}
-green_d = {{term.color2}}
-yellow_d = {{term.color3}}
-blue_d = {{term.color4}}
-magenta_d = {{term.color5}}
-cyan_d = {{term.color6}}
-white_d = {{term.color7}}
+# Colors
+[colors]
+foreground = {{term.color15}}
+background = {{term.color0}}
 
+# Normal colors
+color0  = {{term.color0}}
+color1  = {{term.color1}}
+color2  = {{term.color2}}
+color3  = {{term.color3}}
+color4  = {{term.color4}}
+color5  = {{term.color5}}
+color6  = {{term.color6}}
+color7  = {{term.color7}}
 
-[colors.bright]
-black_l    = {{term.color8}}
-red _l     = {{term.color9}}
-green_l    = {{term.color10}}
-yellow_l   = {{term.color11}}
-blue_l     = {{term.color12}}
-magenta_l  = {{term.color13}}
-cyan_l     = {{term.color14}}
-white_l    = {{term.color15}}
+# Bright colors
+color8  = {{term.color8}}
+color9  = {{term.color9}}
+color10 = {{term.color10}}
+color11 = {{term.color11}}
+color12 = {{term.color12}}
+color13 = {{term.color13}}
+color14 = {{term.color14}}
+color15 = {{term.color15}}
 
-[colors.primary]
-background             black_l
-foreground            white
+# Font settings
+font_family  = {{font.mono}}
+font_size    = {{font.size}}
 
-[font]
-size = {{font.size}}
-
-[font.normal]
-family = "{{font.mono}}"
-
-[[keyboard.bindings]]
-action = "SpawnNewInstance"
-key = "Return"
-mods = "Control|Shift"
-
-[window]
-opacity = {{opacity.terminal}}
-
-[window.padding]
-x = {{padding.x}}
-y = {{padding.y}}
+# Window settings
+window_padding_width = {{padding.x}}
+window_padding_height = {{padding.y}}
+background_opacity = {{opacity.terminal}}
